@@ -1,6 +1,9 @@
 from django.db import models
 
 # Create your models here.
+from django.db import models
+from classRoom.models import Room
+from teacher.models import Teacher
 
 
 class Course(models.Model):

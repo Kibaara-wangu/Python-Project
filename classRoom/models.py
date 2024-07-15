@@ -1,9 +1,11 @@
 from django.db import models
+from teacher .models import Teacher
+from classRoom.models import Room
 
 # Create your models here.
 
 
-class Class(models.Model):
+class Room(models.Model):
   class_name= models.CharField(max_length=20)
   number_of_seats= models.IntegerField()
   number_of_students= models.IntegerField()
