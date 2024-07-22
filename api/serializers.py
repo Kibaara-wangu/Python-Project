@@ -1,41 +1,27 @@
-from rest_framework import serializers;
-from student.models import Student;
-from teacher.models import Teacher;
-from course.models import Course;
-from classRoom.models import Room;
-from period.models import Period;
-
-
-
-
-
-
-
-
+from classperiod.models import Class_Period
+from classroom.models import Classroom
+from course.models import Courses
+from student.models import Student
+from rest_framework import serializers
+from teacher.models import Teacher
 
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
         fields = "__all__"
-
 class TeacherSerializer(serializers.ModelSerializer):
     class Meta:
         model = Teacher
         fields = "__all__"
-
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Course
+        model = Courses
         fields = "__all__"
-
-class classRoomSerializer(serializers.ModelSerializer):
+class ClassroomSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Room
+        model = Classroom
         fields = "__all__"
-        
-class PeriodSerializer(serializers.ModelSerializer):
+class Class_PeriodSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Period
+        model = Class_Period
         fields = '__all__'
-
-        
