@@ -1,6 +1,6 @@
 from classperiod.models import Class_Period
 from classroom.models import Classroom
-from course.models import Courses
+from courses.models import Courses
 from student.models import Student
 from rest_framework import serializers
 from teacher.models import Teacher

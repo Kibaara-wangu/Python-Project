@@ -12,7 +12,9 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RenameModel(
+            
             old_name='Class',
-            new_name='ClassRoom',
+            new_name='Classroom',
+            
         ),
     ]
